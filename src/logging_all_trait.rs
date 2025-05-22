@@ -1,5 +1,5 @@
+#![allow(dead_code)]
 use std::fmt::{Debug};
-use std::collections::HashMap;
 
 use std::ops::{Deref, DerefMut};
 
@@ -45,6 +45,7 @@ impl<T: Debug> DerefMut for Logger<T> {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use std::collections::HashMap;
     #[test]
     fn test_one() {
         let mut logged_vec = Logger::new(vec![1, 2, 3]);

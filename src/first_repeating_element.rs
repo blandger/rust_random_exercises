@@ -5,6 +5,7 @@
 //
 // Важно: именно первое по порядку повторение в массиве.
 
+#![allow(dead_code)]
 use std::collections::HashSet;
 
 fn find_first_repeating_element(nums: &[i32]) -> Option<i32> {

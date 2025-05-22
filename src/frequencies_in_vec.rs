@@ -11,7 +11,7 @@
 // Решение не должно требовать Clone у T.
 // 
 // Подумай: нужно ли использовать ссылки? (ДА !)
-
+#![allow(dead_code)]
 use std::collections::HashMap;
 use std::hash::Hash;
 

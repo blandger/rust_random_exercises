@@ -5,7 +5,7 @@
 // inc(&self) — увеличивает значение
 //
 // get(&self) -> u32 — возвращает текущее значение
-
+#![allow(dead_code)]
 use std::cell::RefCell;
 
 struct Counter {

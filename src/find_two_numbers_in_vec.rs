@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 use std::collections::HashMap;
 
 // Дано: вектор целых чисел nums и целое число target.

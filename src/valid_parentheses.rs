@@ -7,7 +7,7 @@
 // Скобки должны быть закрыты в правильном порядке.
 //
 // Каждая закрывающая скобка должна иметь соответствующую открывающую.
-
+#![allow(dead_code)]
 fn is_valid_parentheses(s: String) -> bool {
     let mut stack: Vec<char> = vec![];
 

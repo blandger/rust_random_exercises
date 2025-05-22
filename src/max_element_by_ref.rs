@@ -9,7 +9,7 @@
 // Тип T должен реализовывать Ord
 // 
 // Использовать iter() или iter().max() разрешено
-
+#![allow(dead_code)]
 fn max_ref<'a, T: Ord>(items: &'a [T]) -> Option<&'a T> {
     items.iter().max()
 }

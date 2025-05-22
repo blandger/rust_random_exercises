@@ -8,7 +8,7 @@
 // - Используй стандартные типажи (Clone, Ord, PartialEq, и т.д.).
 // - Напиши юнит-тесты.
 // - Сделай Wrapper<T> удобным для отладки (#[derive(Debug)]).
-
+#![allow(dead_code)]
 use std::cmp::max;
 
 #[derive(Debug, Ord, PartialOrd, Eq, PartialEq, Copy, Clone)]

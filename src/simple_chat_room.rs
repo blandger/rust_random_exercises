@@ -7,7 +7,7 @@
 // Каждый User имеет клон Rc<RefCell<Vec<String>>>.
 //
 // Метод send_message(&self, message: &str) у юзера добавляет сообщение в чат.
-
+#![allow(dead_code)]
 use std::cell::RefCell;
 use std::rc::Rc;
 

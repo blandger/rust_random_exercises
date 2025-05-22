@@ -6,7 +6,7 @@
 //     T: Clone,
 
 // Функция должна возвращать новый Vec<T>, содержащий только те элементы, которые удовлетворяют предикату.
-
+#![allow(dead_code)]
 fn filter_with<F, T>(items: &[T], predicate: F) -> Vec<T>
 where
     F: Fn(&T) -> bool,

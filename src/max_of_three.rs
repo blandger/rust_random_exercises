@@ -2,7 +2,7 @@
 // Требуется: Написать функцию max_of_three<T>, которая принимает три значения одного типа T и возвращает наибольшее из них.
 
 // Ограничение: Тип T должен поддерживать сравнение (PartialOrd) и копирование (Copy или Clone, на выбор).
-
+#![allow(dead_code)]
 use std::cmp::max;
 pub fn max_of_three<T>(one: T, two: T, three: T) -> T
 where T: PartialEq + Clone + Ord {

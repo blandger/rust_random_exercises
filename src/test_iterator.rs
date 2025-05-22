@@ -1,5 +1,5 @@
 // Написать простой итератор для вектора
-
+#![allow(dead_code)]
 trait MyIterator<T> {
     type Output;
     fn next(&mut self) -> Option<Self::Output>;

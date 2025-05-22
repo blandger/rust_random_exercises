@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 mod test_iterator;
 mod find_two_numbers_in_vec;
 mod count_log_levels;

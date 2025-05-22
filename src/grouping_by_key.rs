@@ -12,7 +12,7 @@
 // Функция key_selector получает ссылку на элемент &T и возвращает ключ K.
 //
 // Нужно сгруппировать элементы в HashMap<K, Vec<T>>, где ключ — это результат key_selector(item), а значение — вектор элементов, попавших под этот ключ.
-
+#![allow(dead_code)]
 use std::collections::HashMap;
 use std::hash::Hash;
 

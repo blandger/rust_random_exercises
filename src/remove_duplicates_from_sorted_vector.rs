@@ -12,7 +12,7 @@
 // Без .dedup() — реализовать руками.
 // 
 // Важно работать с &mut Vec, а не брать Vec<T> по значению.
-
+#![allow(dead_code)]
 use std::collections::HashSet;
 use std::hash::Hash;
 

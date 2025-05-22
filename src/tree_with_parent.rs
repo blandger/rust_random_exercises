@@ -13,7 +13,7 @@
 // устанавливает ссылку на родителя (Weak),
 // 
 // добавляет потомка в список children.
-
+#![allow(dead_code)]
 use std::cell::RefCell;
 use std::rc::{Rc, Weak};
 
