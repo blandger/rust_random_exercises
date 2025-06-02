@@ -1,6 +1,7 @@
 mod anagrams_check;
 mod atomic_once_cell;
 mod atomic_ptr;
+mod call_counter;
 mod cell_call_counter;
 mod count_log_levels;
 mod find_all_containing_substrings;
