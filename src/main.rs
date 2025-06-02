@@ -1,4 +1,5 @@
 mod anagrams_check;
+mod atomic_once_cell;
 mod atomic_ptr;
 mod cell_call_counter;
 mod count_log_levels;
