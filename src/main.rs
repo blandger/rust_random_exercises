@@ -23,6 +23,7 @@ mod simple_chat_room;
 mod stepped_iter;
 #[allow(dead_code)]
 mod test_iterator;
+mod tokio_worker_pool;
 mod tree_with_parent;
 mod valid_parentheses;
 

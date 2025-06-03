@@ -137,7 +137,7 @@ mod tests {
 
         assert_eq!(cell.take(), Some(124));
     }
-    
+
     #[test]
     fn test_three() {
         let msg = "Some message for test!";
