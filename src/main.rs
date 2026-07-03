@@ -27,6 +27,7 @@ mod tokio_worker_pool;
 mod tree_with_parent;
 mod valid_parentheses;
 mod producer_consumer_condvar;
+mod slab_single_thread;
 
 fn main() {
     // test_iterator::main();
