@@ -55,13 +55,18 @@ impl WorkerPool {
     }
 }
 
-#[tokio::main]
-async fn main() {
-    let pool = WorkerPool::new(4).await;
-    pool.submit_task(Box::new(|| println!("Task 1 executed"))).await;
-    pool.submit_task(Box::new(|| println!("Task 2 executed"))).await;
-    pool.submit_task(Box::new(|| println!("Task 3 executed"))).await;
-    pool.submit_task(Box::new(|| println!("Task 4 executed"))).await;
-    pool.submit_task(Box::new(|| println!("Task 5 executed"))).await;
-    pool.submit_task(Box::new(|| println!("Task 6 executed"))).await;
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[tokio::test]
+    async fn test_worker_pool() {
+        let pool = WorkerPool::new(4).await;
+        pool.submit_task(Box::new(|| println!("Task 1 executed"))).await;
+        pool.submit_task(Box::new(|| println!("Task 2 executed"))).await;
+        pool.submit_task(Box::new(|| println!("Task 3 executed"))).await;
+        pool.submit_task(Box::new(|| println!("Task 4 executed"))).await;
+        pool.submit_task(Box::new(|| println!("Task 5 executed"))).await;
+        pool.submit_task(Box::new(|| println!("Task 6 executed"))).await;
+    }
 }
