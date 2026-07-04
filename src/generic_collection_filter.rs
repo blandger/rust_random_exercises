@@ -12,14 +12,11 @@ where
     F: Fn(&T) -> bool,
     T: Clone,
 {
-    /*let mut result: Vec<T> = Vec::new();
-    for item in items {
-        if predicate(item) {
-            result.push(item.clone());
-        }
-    }
-    result*/
-    items.iter().filter(|item| predicate(item)).cloned().collect()
+    items
+        .iter()
+        .filter(|item| predicate(item))
+        .cloned()
+        .collect()
 }
 
 fn _filter_with_owned<F, T>(items: Vec<T>, predicate: F) -> Vec<T>

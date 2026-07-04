@@ -90,7 +90,7 @@ mod tests {
             let atomic = AtomicOption::new();
             assert!(atomic.set_once(tracker));
             assert_eq!(counter.load(AtomicOrdering::SeqCst), 0);
-            // `atomic` выйдет из области видимости, и должен вызвать drop для Tracker
+            // `atomics` выйдет из области видимости, и должен вызвать drop для Tracker
         }
 
         // Теперь объект должен быть удалён
