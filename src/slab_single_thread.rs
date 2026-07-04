@@ -1,5 +1,3 @@
-// https://rustcurious.com/8
-
 // Exercise: Slab
 //
 // This Slab type implements a collection based
